@@ -45,7 +45,8 @@ var paths = {
   images: {
     source: [
       './source/images/**/*.{gif,jpg,jpeg,png,svg}',
-      '!./source/images/favicons/*.{gif,jpg,jpeg,png}'
+      '!./source/images/favicons/*.{gif,jpg,jpeg,png}',
+      '!./source/images/svg/*.svg'
     ],
     build: './build/images/'
   },
@@ -114,7 +115,6 @@ function styles() {
     .pipe(gcmq())
     .pipe(purgecss({
       content: [paths.views.source],
-      fontFace: true,
       keyframes: true,
       whitelistPatterns: [/js/]
     }))

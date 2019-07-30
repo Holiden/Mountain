@@ -1,2 +1,74 @@
 @import "./base/fonts";
 @import "./base/general";
+@import "./helpers/variables";
+
+.main-header {
+  min-height: 1080px;
+  max-width: 1920px;
+
+  background: url(../images/header_bg.jpg) top center no-repeat;
+}
+
+.main-header__navigation {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.navigation__list {
+  display: flex;
+  padding: 0;
+
+  list-style: none;
+}
+
+.navigation__item {
+  margin: 0 20px;
+}
+
+.navigation__link {
+  font: 600 16px/90px Muli, Arial, sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+
+  transition: all 0.3s linear;
+
+  &:hover,
+  &:focus {
+    color: $accent_color;
+  }
+}
+
+.main-header__text {
+  max-width: 660px;
+  margin: 420px 0 0 330px;
+
+  font: 24px/36px Muli, Arial, sans-serif;
+  color: #ffffff;
+}
+
+.main-header__link {
+  display: inline-block;
+  height: 60px;
+  width: 240px;
+  margin: 50px 0 0 330px;
+
+  font: 700 18px/60px Catamaran, Arial, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: $accent_color;
+  border-radius: 6px;
+
+  transition: all 0.3s linear;
+
+  &:hover,
+  &:focus {
+    color: $secondary_color;
+  }
+}
