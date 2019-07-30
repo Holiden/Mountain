@@ -31,7 +31,7 @@
 .navigation__link {
   font: 600 16px/90px Muli, Arial, sans-serif;
   color: #ffffff;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.16px;
   text-decoration: none;
 
   transition: all 0.3s linear;
@@ -52,13 +52,116 @@
 
 .main-header__link {
   display: inline-block;
-  height: 60px;
   width: 240px;
   margin: 50px 0 0 330px;
 
   font: 700 18px/60px Catamaran, Arial, sans-serif;
   color: #ffffff;
   text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: $accent_color;
+  border-radius: 6px;
+
+  transition: all 0.3s linear;
+
+  &:hover,
+  &:focus {
+    color: $secondary_color;
+  }
+}
+
+.main-page {
+  background-color: #f6f6f6;
+}
+
+.offer {
+  padding: 70px 0 160px;
+
+  text-align: center;
+}
+
+.offer__title {
+  margin: 0;
+
+  font: 700 60px/90px Catamaran, Arial, sans-serif;
+  color: #333333;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.offer__text {
+  max-width: 950px;
+  margin: 20px auto 0;
+
+  font: 300 18px/32px Muli, Arial, sans-serif;
+  color: #565656;
+  letter-spacing: 0.18px;
+}
+
+.offer__list {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.offer__item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  &::before {
+    content: "";
+
+    height: 184px;
+    width: 240px;
+  }
+}
+
+.offer__item_left::before {
+  background: url(../images/offers_1.png) top center no-repeat;
+}
+
+.offer__item_center::before {
+  background: url(../images/offers_2.png) top center no-repeat;
+}
+
+.offer__item_right::before {
+  background: url(../images/offers_3.png) top center no-repeat;
+}
+
+.offer__subtitle {
+  order: 2;
+  max-width: 220px;
+  margin: 0;
+
+  font: 700 24px/30px Catamaran, Arial, sans-serif;
+  color: #333333;
+  letter-spacing: 0.24px;
+  text-transform: uppercase;
+}
+
+.offer__desk {
+  order: 1;
+  margin: 30px 0 0;
+
+  font: 300 14px/40px Muli, Arial, sans-serif;
+  color: #565656;
+  letter-spacing: 0.14px;
+  text-transform: uppercase;
+}
+
+.offer__link {
+  order: 3;
+  width: 120px;
+  margin: 30px 0 0;
+
+  font: 700 15px/50px Catamaran, Arial, sans-serif;
+  color: #fefefe;
   text-decoration: none;
   text-transform: uppercase;
 

@@ -5,7 +5,9 @@
 1. HTML;
 2. CSS (SCSS);
 3. Gulp;
-4. BEM.
+4. BEM;
+5. VS Code;
+6. Avocode.
 
 ## Контакты
 [telegram](https://t.me/holiden)  
