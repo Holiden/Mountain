@@ -15,9 +15,9 @@
     <nav class="main-header__navigation">
       <a class="navigation__logo"><img src="./images/header_logo.png" alt="Logo Mountain"></a>
       <ul class="navigation__list">
-        <li class="navigation__item"><a class="navigation__link" href="#">Home</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#">Offer</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#">Gallery</a></li>
+        <li class="navigation__item"><a class="navigation__link navigation__link_disable">Home</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#i-offer">Offer</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#i-gallery">Gallery</a></li>
         <li class="navigation__item"><a class="navigation__link" href="#">About</a></li>
         <li class="navigation__item"><a class="navigation__link" href="#">Contact</a></li>
       </ul>
@@ -28,26 +28,36 @@
 
   <main class="main-page">
     <h1 class="visually-hidden">Mountain - sky & snowboard school.</h1>
-    <section class="offer">
+    <section class="offer" id="i-offer">
       <h2 class="offer__title">What we offer</h2>
       <p class="offer__text">Skiing and snowboarding still rank among the undisputed winter sport highlights for all ages and ability levels. The perfectly groomed ski slopes makes a real heaven for skiers and riders. Our professional ski and snowboard instructors can show you all the little details while improving your skiing techniques and riding skills.</p>
       <ul class="offer__list">
         <li class="offer__item offer__item_left">
           <h3 class="offer__subtitle">Private lessons for beginners</h3>
           <p class="offer__desk">New to skiing?</p>
-          <a href="" class="offer__link">From $250</a>
+          <a class="offer__link" href="#">From $250</a>
         </li>
         <li class="offer__item offer__item_center">
           <h3 class="offer__subtitle">Group lessons for beginners</h3>
           <p class="offer__desk">Need a crew?</p>
-          <a href="" class="offer__link">From $150</a>
+          <a class="offer__link" href="#">From $150</a>
         </li>
         <li class="offer__item offer__item_right">
           <h3 class="offer__subtitle">Advanced group lessons</h3>
           <p class="offer__desk">Wanna more?</p>
-          <a href="" class="offer__link">From $450</a>
+          <a class="offer__link" href="#">From $450</a>
         </li>
       </ul>
+    </section>
+
+    <section class="gallery" id="i-gallery">
+      <img class="gallery__image_1" src="./images/foto_1.jpg" alt="Man carries snowboard" height="425" width="640">
+      <img class="gallery__image_2" src="./images/foto_2.jpg" alt="Photo skier" height="840" width="640">
+      <img class="gallery__image_3" src="./images/foto_3.jpg" alt="Woman carries snowboard" height="425" width="640">
+      <img class="gallery__image_4" src="./images/foto_4.jpg" alt="Snowboard stuck in the snow" height="480" width="640">
+      <img class="gallery__image_5" src="./images/foto_5.jpg" alt="Snowboarder on a background of mountains" height="360" width="640">
+      <img class="gallery__image_6" src="./images/foto_6.jpg" alt="Joyful skier" height="855" width="640">
+      <img class="gallery__image_7" src="./images/foto_7.jpg" alt="Snowboarder during the descent from the mountain" height="410" width="640">
     </section>
   </main>
 </body>

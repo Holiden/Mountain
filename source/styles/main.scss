@@ -36,8 +36,8 @@
 
   transition: all 0.3s linear;
 
-  &:hover,
-  &:focus {
+  &:not(.navigation__link_disable):hover,
+  &:not(.navigation__link_disable):focus {
     color: $accent_color;
   }
 }
@@ -102,7 +102,7 @@
 
 .offer__list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin: 50px 0 0;
   padding: 0;
 
@@ -174,4 +174,40 @@
   &:focus {
     color: $secondary_color;
   }
+}
+
+.gallery {
+  display: grid;
+  grid-template-rows: 425px 430px 50px 360px;
+  grid-template-columns: repeat(3, 640px);
+  justify-content: center;
+  overflow: hidden;
+}
+
+.gallery__image_1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.gallery__image_2 {
+  grid-area: 2 / 1 / 5 / 2;
+}
+
+.gallery__image_3 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.gallery__image_4 {
+  grid-area: 2 / 2 / 4 / 3;
+}
+
+.gallery__image_5 {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.gallery__image_6 {
+  grid-area: 1 / 3 / 3 / 4;
+}
+
+.gallery__image_7 {
+  grid-area: 3 / 3 / 5 / 4;
 }
