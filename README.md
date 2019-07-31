@@ -11,6 +11,8 @@
 5. VS Code;
 6. Avocode.
 
+![Screenshot макета](https://github.com/Holiden/Mountain/blob/master/source/images/screenshot.png)
+
 ## Контакты
 [telegram](https://t.me/holiden)  
 [vk](https://vk.com/holiden)
