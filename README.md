@@ -1,7 +1,7 @@
 # Mountain
 ![Publication Date](https://img.shields.io/static/v1?label=Release%20Date&message=30.07.2019&color=brightgreen&style=flat-square)
 
-Кроссбраузерный макет
+Кроссбраузерный тренировочный макет
 
 ## Используемые технологии
 1. HTML;

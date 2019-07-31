@@ -148,6 +148,7 @@
 
 .offer__desk {
   order: 1;
+  max-width: 220px;
   margin: 30px 0 0;
 
   font: 300 14px/40px Muli, Arial, sans-serif;
@@ -238,6 +239,7 @@
 }
 
 .crew__item {
+  align-items: center;
   display: flex;
   flex-direction: column;
   margin: 0 50px 0;
@@ -251,6 +253,7 @@
 
 .crew__desc {
   order: 2;
+  max-width: 190px;
   margin: 20px 0 0;
 
   font: 300 14px/40px Muli, Arial, sans-serif;
@@ -261,10 +264,72 @@
 
 .crew__subtitle {
   order: 3;
+  max-width: 190px;
   margin: 0;
 
   font: 700 24px Catamaran, Arial, sans-serif;
   color: #333333;
   letter-spacing: 0.24px;
   text-transform: uppercase;
+}
+
+.about {
+  min-height: 1080px;
+
+  background: url(../images/about_bg.jpg) top center no-repeat;
+}
+
+.about__title {
+  max-width: 660px;
+  margin: 0;
+  padding: 230px 0 0 330px;
+
+  font: 700 60px/70px Catamaran, Arial, sans-serif;
+  color: #2f2f2f;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  max-width: 820px;
+  padding: 0 0 0 330px;
+
+  font: 300 18px/32px Muli, Arial, sans-serif;
+  color: #2b2b2b;
+  letter-spacing: 0.18px;
+}
+
+.about__list {
+  display: flex;
+  margin: 50px 0 0;
+  padding: 0 0 0 285px;
+
+  list-style: none;
+}
+
+.about__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 45px;
+}
+
+.about__subtitle {
+  order: 2;
+  max-width: 230px;
+  margin: 0;
+
+  font: 400 18px/24px Muli, Arial, sans-serif;
+  color: #2b2b2b;
+  letter-spacing: 0.18px;
+  text-transform: uppercase;
+}
+
+.about__desk {
+  order: 1;
+  max-width: 160px;
+  margin: 0;
+
+  font: 700 64px/70px Catamaran, Arial, sans-serif;
+  color: $accent_color;
+  letter-spacing: 0.64px;
 }
