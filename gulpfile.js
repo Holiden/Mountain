@@ -226,7 +226,7 @@ function images() {
 function imageswebp() {
   return gulp.src(paths.imageswebp.source)
     .pipe(newer(paths.imageswebp.build))
-    .pipe(gulpif(argv.build, webp(imagemin([
+    .pipe(webp(gulpif(argv.build, imagemin([
       imageminwebp({
         alphaQuality: 70,
         lossless: true,
@@ -348,4 +348,4 @@ function watch() {
   gulp.watch(paths.fonts.source, fonts);
 }
 
-gulp.task('default', gulp.series(clean, gulp.parallel(views, styles, scripts, images, imageswebp, sprites, favicons, fonts), watch));
+gulp.task('default', gulp.series(clean, views, styles, scripts, images, imageswebp, sprites, favicons, fonts, watch));

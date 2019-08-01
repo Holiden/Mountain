@@ -13,7 +13,12 @@
 <body>
   <header class="main-header">
     <nav class="main-header__navigation">
-      <a class="navigation__logo"><img src="./images/header_logo.png" alt="Logo Mountain"></a>
+      <a class="navigation__logo">
+        <picture>
+          <source srcset="./images/header_logo.webp" type="image/webp">
+            <img src="./images/header_logo.png" alt="Logo Mountain">
+        </picture>
+      </a>
       <ul class="navigation__list">
         <li class="navigation__item"><a class="navigation__link navigation__link_disable">Home</a></li>
         <li class="navigation__item"><a class="navigation__link" href="#i-offer">Offer</a></li>
@@ -51,35 +56,68 @@
     </section>
 
     <section class="gallery" id="i-gallery">
-      <img class="gallery__image_1" src="./images/foto_1.jpg" alt="Man carries snowboard" height="425" width="640">
-      <img class="gallery__image_2" src="./images/foto_2.jpg" alt="Photo skier" height="840" width="640">
-      <img class="gallery__image_3" src="./images/foto_3.jpg" alt="Woman carries snowboard" height="425" width="640">
-      <img class="gallery__image_4" src="./images/foto_4.jpg" alt="Snowboard stuck in the snow" height="480" width="640">
-      <img class="gallery__image_5" src="./images/foto_5.jpg" alt="Snowboarder on a background of mountains" height="360" width="640">
-      <img class="gallery__image_6" src="./images/foto_6.jpg" alt="Joyful skier" height="855" width="640">
-      <img class="gallery__image_7" src="./images/foto_7.jpg" alt="Snowboarder during the descent from the mountain" height="410" width="640">
+      <picture>
+        <source type="image/webp" srcset="./images/foto_1.webp">
+        <img class="gallery__image_1" src="./images/foto_1.jpg" alt="Man carries snowboard" height="425" width="640">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="./images/foto_2.webp">
+        <img class="gallery__image_2" src="./images/foto_2.jpg" alt="Photo skier" height="840" width="640">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="./images/foto_3.webp">
+        <img class="gallery__image_3" src="./images/foto_3.jpg" alt="Woman carries snowboard" height="425" width="640">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="./images/foto_4.webp">
+        <img class="gallery__image_4" src="./images/foto_4.jpg" alt="Snowboard stuck in the snow" height="480" width="640">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="./images/foto_5.webp">
+        <img class="gallery__image_5" src="./images/foto_5.jpg" alt="Snowboarder on a background of mountains" height="360" width="640">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="./images/foto_6.webp">
+        <img class="gallery__image_6" src="./images/foto_6.jpg" alt="Joyful skier" height="855" width="640">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="./images/foto_7.webp">
+        <img class="gallery__image_7" src="./images/foto_7.jpg" alt="Snowboarder during the descent from the mountain" height="410" width="640">
+      </picture>
     </section>
 
     <section class="crew">
       <h2 class="crew__title">Meet our crew</h2>
       <ul class="crew__list">
         <li class="crew__item">
-          <img class="crew__image" src="./images/crew_1.jpg" alt="Foto Jamie Garcia" height="240" width="240">
+          <picture>
+            <source type="image/webp" srcset="./images/crew_1.webp">
+            <img class="crew__image" src="./images/crew_1.jpg" alt="Foto Jamie Garcia" height="240" width="240">
+          </picture>
           <h3 class="crew__subtitle">Jamie Garcia</h3>
           <p class="crew__desc">Instructor</p>
         </li>
         <li class="crew__item">
-          <img class="crew__image" src="./images/crew_2.jpg" alt="Foto James Billings" height="240" width="240">
+          <picture>
+            <source type="image/webp" srcset="./images/crew_2.webp">
+            <img class="crew__image" src="./images/crew_2.jpg" alt="Foto James Billings" height="240" width="240">
+          </picture>
           <h3 class="crew__subtitle">James Billings</h3>
           <p class="crew__desc">Instructor</p>
         </li>
         <li class="crew__item">
-          <img class="crew__image" src="./images/crew_3.jpg" alt="Foto Peter Colins" height="240" width="240">
+          <picture>
+            <source type="image/webp" srcset="./images/crew_3.webp">
+            <img class="crew__image" src="./images/crew_3.jpg" alt="Foto Peter Colins" height="240" width="240">
+          </picture>
           <h3 class="crew__subtitle">Peter Colins</h3>
           <p class="crew__desc">Instructor</p>
         </li>
         <li class="crew__item">
-          <img class="crew__image" src="./images/crew_4.jpg" alt="Foto Amanda Lee" height="240" width="240">
+          <picture>
+            <source type="image/webp" srcset="./images/crew_4.webp">
+            <img class="crew__image" src="./images/crew_4.jpg" alt="Foto Amanda Lee" height="240" width="240">
+          </picture>
           <h3 class="crew__subtitle">Amanda Lee</h3>
           <p class="crew__desc">Instructor</p>
         </li>
@@ -110,10 +148,10 @@
       <div class="contact__wrapper">
         <h2 class="contact__title">Contact us</h2>
         <ul class="contact__list">
-          <li class="contact__item"><svg height="27" width="27" class="contact__svg"><use xlink:href="./images/sprites/sprite.svg#icon_phone"></use></svg><a class="contact__link" href="tel:+43662123456">+43 662 123456</a></li>
-          <li class="contact__item"><svg height="27" width="27" class="contact__svg"><use xlink:href="./images/sprites/sprite.svg#icon_marker"></use></svg><p class="contact__text">Paracelsusstraße 26, 5020 Salzburg, Austria</p></li>
-          <li class="contact__item"><svg height="27" width="27" class="contact__svg"><use xlink:href="./images/sprites/sprite.svg#icon_email"></use></svg><a class="contact__link" href="mailto:inbox@mountain.com">inbox@mountain.com</a></li>
-          <li class="contact__item"><svg height="27" width="27" class="contact__svg"><use xlink:href="./images/sprites/sprite.svg#icon_clock"></use></svg><p class="contact__text">Open hours: 8.00AM - 10.00PM monday - sunday</p></li>
+          <li class="contact__item"><svg class="contact__svg" height="27" width="27"><use xlink:href="./images/sprites/sprite.svg#icon_phone"></use></svg><a class="contact__link" href="tel:+43662123456">+43 662 123456</a></li>
+          <li class="contact__item"><svg class="contact__svg" height="27" width="27"><use xlink:href="./images/sprites/sprite.svg#icon_marker"></use></svg><p class="contact__text">Paracelsusstraße 26, 5020 Salzburg, Austria</p></li>
+          <li class="contact__item"><svg class="contact__svg" height="27" width="27"><use xlink:href="./images/sprites/sprite.svg#icon_email"></use></svg><a class="contact__link" href="mailto:inbox@mountain.com">inbox@mountain.com</a></li>
+          <li class="contact__item"><svg class="contact__svg" height="27" width="27"><use xlink:href="./images/sprites/sprite.svg#icon_clock"></use></svg><p class="contact__text">Open hours: 8.00AM - 10.00PM monday - sunday</p></li>
         </ul>
         <ul class="contact__social">
           <li class="social__item"><a class="social__link" href="https://twitter.com/" target="_blank"><span class="visually-hidden">Twitter</span><svg height="30" width="30"><use xlink:href="./images/sprites/sprite.svg#icon_twitter"></use></svg></a></li>
@@ -121,7 +159,10 @@
           <li class="social__item"><a class="social__link" href="https://instagram.com/" target="_blank"><span class="visually-hidden">Instagram</span><svg height="30" width="30"><use xlink:href="./images/sprites/sprite.svg#icon_instagram"></use></svg></a></li>
         </ul>
       </div>
-      <img src="./images/contact_bg.png" alt="Contact map" height="620" width="1280">
+      <picture>
+        <source type="image/webp" srcset="./images/contact_bg.webp">
+        <img src="./images/contact_bg.png" alt="Contact map" height="620" width="1280">
+      </picture>
     </section>
   </main>
 </body>
