@@ -225,7 +225,10 @@ function images() {
 
 function imageswebp() {
   return gulp.src(paths.imageswebp.source)
-    .pipe(newer(paths.imageswebp.build))
+    .pipe(newer({
+      dest: paths.imageswebp.build,
+      ext: '.webp'
+    }))
     .pipe(webp(gulpif(argv.build, imagemin([
       imageminwebp({
         alphaQuality: 70,
