@@ -15,7 +15,7 @@
     <nav class="main-header__navigation">
       <a class="navigation__logo">
         <picture>
-          <source srcset="./images/header_logo.webp" type="image/webp">
+          <source type="image/webp" srcset="./images/header_logo.webp">
             <img src="./images/header_logo.png" alt="Logo Mountain">
         </picture>
       </a>
@@ -133,11 +133,13 @@
           <li class="social__item"><a class="social__link" href="https://instagram.com/" target="_blank"><span class="visually-hidden">Instagram</span><svg height="30" width="30"><use xlink:href="./images/sprites/sprite.svg#icon_instagram"></use></svg></a></li>
         </ul>
       </div>
-      <picture>
+      <picture class="contact__image">
         <source type="image/webp" srcset="./images/contact_bg.webp">
-        <img src="./images/contact_bg.png" alt="Contact map" height="620" width="1280">
+        <img class="contact__image" src="./images/contact_bg.png" alt="Contact map" height="620" width="1280">
       </picture>
     </section>
   </main>
+  <script src="./scripts/main.js"></script>
+  <script>svg4everybody();</script>
 </body>
 </html>
