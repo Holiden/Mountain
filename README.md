@@ -13,6 +13,7 @@
 
 ## Контакты
 [telegram](https://t.me/holiden)  
-[vk](https://vk.com/holiden)
+[vk](https://vk.com/holiden)  
+[email](holideny@gmail.com)
 
 ![Screenshot макета](https://github.com/Holiden/Mountain/blob/master/source/images/screenshot.png)
